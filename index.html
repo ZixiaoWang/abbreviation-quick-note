@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbreviation Dictionary</title>
+
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./result.css">
+    <link rel="stylesheet" href="./editor.css">
+</head>
+
+<body>
+    <div class="landing-container">
+        <div class="heading-container">
+            <h1><span style="color: #ee4d2d;">Abbreviation</span> Dictionary</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search" id="input1">
+            <button class="search-button" id="search1">🔍</button>
+        </div>
+        <div class="action-container">
+            <button id="edit">Edit Abbreviations</button>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div class="result-head-container">
+            <div class="heading-container">
+                <h2 id="logo">
+                    <span style="color: #ee4d2d;">Abbr</span> Dic
+                </h2>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search" id="input2">
+                <button class="search-button" id="search2">🔍</button>
+            </div>
+        </div>
+        <div class="result-content-container" id="results">
+        </div>
+    </div>
+
+    <div class="editor-container">
+        <div class="editor-area">
+            <textarea name="editer" id="editor"></textarea>
+        </div>
+        <dic class="action-area">
+            <button id="cancel">Cancel</button>
+            <button class="primary-button" id="save">Save</button>
+        </dic>
+    </div>
+
+    <div class="toaster-container" id="toastercontainer"></div>
+
+    <template id="resultitem">
+        <h3></h3>
+        <p en></p>
+        <p zh></p>
+    </template>
+
+    <template id="resultempty">
+        <h3>No Results Found</h3>
+        <p>Add this abbreviation to the dictionary by clicking the "Edit Abbreviations" button.</p>
+        <button onclick="show('editor')">Edit Abbreviation</button>
+    </template>
+
+    <template id="toaster">
+        <div class="toaster"></div>
+    </template>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

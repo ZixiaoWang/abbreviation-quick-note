@@ -1,0 +1,123 @@
+:root {
+    --orange: #ee4d2d;
+    --red: #d0011b;
+    --blue: #113366;
+}
+
+html, body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-container {
+    width: 100vw;
+    height: 100vh;
+    display: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-container,
+.action-container {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-container {
+    position: relative;
+    width: calc(100% - 24px);
+    max-width: 900px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: calc(100% - 60px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.search-container > button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 36px;
+    width: 56px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border: 2px solid transparent;
+    color: var(--orange);
+    cursor: pointer;
+}
+.search-container > button:hover {
+    border: 2px solid var(--orange);
+}
+
+.action-container {
+    padding: 12px 0;
+    margin-top: 12px;
+}
+
+button {
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 12px;
+}
+
+button.primary-button {
+    border-color: var(--red);
+    background-color: var(--orange);
+    color: white;
+}
+
+button:hover {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.toaster-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.5), transparent);
+}
+
+.toaster {
+    height: 50px;
+    background-color: rgba(255,255,255, 0.75);
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    margin-top: 24px;
+    padding: 0px 48px;
+}

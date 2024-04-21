@@ -1,0 +1,22 @@
+.result-container {
+    width: 100vw;
+    height: 100vh;
+    display: hidden;
+    flex-direction: column;
+}
+
+.result-head-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 0px 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.heading-container > h2 {
+    cursor: pointer;
+}
+
+.result-content-container {
+    padding: 24px 194px;
+}
